@@ -44,15 +44,15 @@ const CalcInterface = () => {
   }
   return (
     <div className="mt-5 pt-5">
-      <h1 className='text-center'>CALCULATOR</h1>
+      <h1 className='text-center text-secondary'>CALCULATOR</h1>
       <Container>
         {error ? (
           <div className="alert alert-danger text-center mt-2">
             Error: Invalid Input
           </div>
         ) : ""}
-        <div>
-          <input type='text' className='form-control my-3 py-3' readOnly value={inputValue} />
+        <div className="form-group">
+          <input type='text' className='form-control my-3 py-3 form-control-lg input-value' readOnly value={inputValue} />
         </div>
         <Button buttonName={buttonName} onCLickHandle={onCLickHandle} />
       </Container>
